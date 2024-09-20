@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DINSUKCOK.SERVICE</title>
+    <link href="icon/dinsucok.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="asset/apala/service.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="gambar/Component 13.png" class="putih" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contack.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop >
+          <source src="gambar.baru/video.mp4" type="video/mp4" />
+        </video>
+        <div class="intro">
+          <h3>SELAMAT DATANG DI</h3>
+           <p>
+                <span
+                  class="typed"
+                  data-typed-items="MY SERVICE,SOFTWARE DEVELOPER,"></span>
+              </p>
+	<!-- service -->
+	<section class="service">
+		<div class="container">
+			<h2>____________________________________</h2>
+			<div class="box">
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-mobile"></i></div>
+					<h4>MOBILE APP</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-globe"></i></div>
+					<h4>WEB DEVELOPMENT</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-edit"></i></div>
+					<h4>DESIGN</h4>
+				</div>
+				<div class="col-4">
+					<div class="icon"><i class="fas fa-chart-bar"></i></div>
+					<h4>TEKNIKAL MARKETING</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>By &copy; 2024 - MuftiArifudinTaqy. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+<style>
+	.typed{
+    font-family: sans-serif;
+    color: #78ac97;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+  .container {
+  height: 100%;
+	width:80%;
+	margin-bottom:75px;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+.service {
+	font-style: oblique;
+	font-size: 15px;
+}
+.box {
+	color: #148F77;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:25%;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.service{
+	color: #148F77;
+}
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+	transition: transform 2s ease, box-shadow 2s ease, opacity 2s ease;
+}
+.icon:hover{
+  transform: scale(1.9);      
+  box-shadow: 0px 8px 15px rgb(255, 0, 0); 
+  opacity: 3.9;              
+}
+.icon:active{
+  transform: scale(1.8);     
+box-shadow: 0px 4px 10px rgb(255, 0, 0); 
+opacity: 3.8;            
+}
+
+.box .col-4 h4 {
+	margin:20px 0;
+}
+footer {
+	padding:30px 0;
+	text-align: center;
+}
+small{
+  position: relative;
+  bottom: 6.5rem;
+  font-size: 13px;
+  color: #148F77;
+}
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 70%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #333;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    header .intro h3{
+      font-size: clamp(20px, 8vw, 24px); 
+    }
+  .layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Mengatur tinggi menjadi 100% dari tinggi viewport */
+  overflow: hidden;
+}
+.layar-penuh video{
+  top: 58%;
+  left: 50%;
+  height: 50%;
+  }
+  .box .col-4 {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+  }
+  .box .col-4 h4 {
+  font-size: 7px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+  
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+<script>
+  const selectTyped = document.querySelector('.typed');
+  if (selectTyped) {
+    let typed_strings = selectTyped.getAttribute('data-typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+  var tombolMenu = $(".tombol-menu");
+var menu = $("nav .menu ul");
+
+function klikMenu() {
+    tombolMenu.click(function () {
+        menu.toggle();
+    });
+    menu.click(function () {
+        menu.toggle();
+    });
+}
+
+$(document).ready(function () {
+    var width = $(window).width();
+    if (width < 990) {
+        klikMenu();
+    }
+})
+
+//check lebar
+$(window).resize(function () {
+    var width = $(window).width();
+    if (width > 989) {
+        menu.css("display", "block");
+        //display:block
+    } else {
+        menu.css("display", "none");
+    }
+    klikMenu();
+});
+
+</script>
+
+
+</body>
+</html>
+      

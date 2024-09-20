@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>DINSUKCOK.ABOUT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="icon/dinsucok.png" rel="icon">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!--  animejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <!--  animejs -->
+  <!--  owl css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!--  owl css -->
+
+  <!--  jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--  jquery -->
+
+</head>
+
+<body>
+  <nav>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href=""><img src="gambar/Component 1 (1).png" class="hitam" /></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contack.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+ <style>
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+  }
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 13rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: #ff0000;
+  }
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+  nav.putih {
+    background-color: rgb(167, 115, 115);
+    background: transparent;
+  }
+  nav .logo {
+    justify-content: center;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+  }
+  nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+  }
+  
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: #ff0000;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* pengaturan header */
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+  }
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ff0000;
+      background-color: #ff0000;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #333;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+      justify-content: center;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    section#gallery{
+      display: grid;
+    grid-template-columns: center(auto-fill, minmax(100px, 1fr));
+
+    }
+    header .intro h3{
+      font-size: 40px;
+        }
+        .time_box {
+          position: absolute ;
+          display: flex;
+    border-radius: 3px;
+  }
+  .time_box span {
+     font-size: 10px;
+  }
+  .time_box h1 {
+     font-size: 25px;
+  }
+.home h2{
+  font-size: 30px;
+padding-top: 50px;
+}
+  }
+ </style>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+<script>var tombolMenu = $(".tombol-menu");
+  var menu = $("nav .menu ul");
+  
+  function klikMenu() {
+      tombolMenu.click(function () {
+          menu.toggle();
+      });
+      menu.click(function () {
+          menu.toggle();
+      });
+  }
+  
+  $(document).ready(function () {
+      var width = $(window).width();
+      if (width < 990) {
+          klikMenu();
+      }
+  })
+  
+  //check lebar
+  $(window).resize(function () {
+      var width = $(window).width();
+      if (width > 989) {
+          menu.css("display", "block");
+          //display:block
+      } else {
+          menu.css("display", "none");
+      }
+      klikMenu();
+  });
+  </script>
+
+              <section class="home">
+                <div class="content flex">
+                  <div class="left">
+                    <div class="time_box flex">
+                      <div class="time">
+                        <h1 id="days">60 :</h1>
+                        <span>DAYS</span>
+                      </div>
+                      <div class="time">
+                        <h1 id="hours">24 :</h1>
+                        <span>HOURS</span>
+                      </div>
+                      <div class="time">
+                        <h1 id="minutes">58 :</h1>
+                        <span>MINUTES</span>
+                      </div>
+                      <div class="time">
+                        <h1 id="seconds">42</h1>
+                        <span>SECONDS</span>
+                      </div>
+                    </div>
+                    <script>
+                    // Tentukan tanggal target (misalnya, 31 Desember 2024)
+                      var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+                      
+                      // Update countdown setiap detik
+                      var countdownFunction = setInterval(function() {
+                      
+                        // Dapatkan waktu saat ini
+                        var now = new Date().getTime();
+                      
+                        // Hitung selisih antara waktu sekarang dan waktu target
+                        var distance = countDownDate - now;
+                      
+                        // Hitung hari, jam, menit, dan detik
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                      
+                        // Tampilkan hasil ke elemen yang sesuai
+                        document.getElementById("days").innerHTML = days;
+                        document.getElementById("hours").innerHTML = hours;
+                        document.getElementById("minutes").innerHTML = minutes;
+                        document.getElementById("seconds").innerHTML = seconds;
+                      
+                        // Jika countdown selesai, tampilkan teks
+                        if (distance < 0) {
+                          clearInterval(countdownFunction);
+                          document.getElementById("days").innerHTML = "00";
+                          document.getElementById("hours").innerHTML = "00";
+                          document.getElementById("minutes").innerHTML = "00";
+                          document.getElementById("seconds").innerHTML = "00";
+                        }
+                      }, 1000);</script>
+            
+                    <h2>Lunching New Bike</h2>
+                    <p> Riding this beast is not just about getting from point A to point B. It's about the thrill, the freedom, and the pure adrenaline rush that comes with every twist of the throttle. This motorcycle isn't just a machine; it's a statement of style, power, and passion. Let's hit the road and make every journey unforgettable!"</p>
+            
+                    <div class="button flex">
+                      <button class="btn1">Learn More</button>
+                      <button class="btn2">Buy Now </button>
+                    </div>
+                  </div>
+            
+                  <div class="right">
+                    <div class="ani_image">
+                      <img src="gambar.baru/bike.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+            
+              <section class="latest top">
+                <div class="scontainer">
+                  <div class="heading">
+                    <h1>Latest Popular Bike</h1>
+                    <div class="lines flex1">
+                      <div class="line"> <i class="fas fa-circle"></i> </div>
+                      <button>50% OFF</button>
+                      <div class="line line2"> <i class="fas fa-circle"></i> </div>
+                    </div>
+                  </div>
+            
+                  <div class="content grid top">
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l1.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>FuryBlade RX Supercharged</h3>
+                        <p>(Produck , Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l2.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Zenith Shadow V8</h3>
+                        <p>(Produck ,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l3.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Ducati Panigale V4</h3>
+                        <p>(Produck , Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l4.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Kawasaki Ninja H2</h3>
+                        <p>(Produck ,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l5.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>BMW S1000RR</h3>
+                        <p>(Produck,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l6.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Harley-Davidson CVO Street Glide</h3>
+                        <p>(Produck,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+            
+            
+              <section class="slider top">
+                <div class="scontainer">
+                  <div class="owl-carousel owl-theme">
+                    <div class="item flex">
+                      <div class="left">
+                        <p>(Produck , Disc)</p>
+                        <h1>KTM 125 DUKE</h1>
+                        <span></span>
+                        <ul>
+                          <li>- Engine Cc : 370.0cc</li>
+                          <li>- Max Power : 14.5 bhp @ 9250 rpm</li>
+                          <li>- Tank Capacity : 10.2 L</li>
+                          <li>- Wheelbase : 1366 mm</li>
+                          <li>- Cooling : Liquid Cooled</li>
+                          <li>- Max Torque : 12 Nm @ 8000 rpm</li>
+                        </ul>
+                        <h2>Price : $1999.99</h2>
+                        <button class="btn2">Buy Now</button>
+                      </div>
+                      <div class="right">
+                        <div class="ani_image">
+                          <img src="gambar.baru/bike2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item flex">
+                      <div class="left">
+                        <p>(Produck ,Disc)</p>
+                        <h1>KTM 125 DUKE</h1>
+                        <span></span>
+                        <ul>
+                          <li>- Engine Cc : 370.0cc</li>
+                          <li>- Max Power : 14.5 bhp @ 9250 rpm</li>
+                          <li>- Tank Capacity : 10.2 L</li>
+                          <li>- Wheelbase : 1366 mm</li>
+                          <li>- Cooling : Liquid Cooled</li>
+                          <li>- Max Torque : 12 Nm @ 8000 rpm</li>
+                        </ul>
+                        <h2>Price : $1999.99</h2>
+                        <button class="btn2">Buy Now</button>
+                      </div>
+                      <div class="right">
+                        <div class="ani_image">
+                          <img src="gambar.baru/bike2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+            
+            
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+                referrerpolicy="no-referrer"></script>
+            
+            
+              <script>
+                $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  dots: false,
+                  navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 1
+                    },
+                    1000: {
+                      items: 1
+                    }
+                  }
+                })
+              </script>
+            
+            
+            
+              <section class="Popular latest slider">
+                <div class="scontainer">
+                  <div class="heading">
+                    <h1>Latest Popular Bike</h1>
+                    <div class="lines flex1">
+                      <div class="line"> <i class="fas fa-circle"></i> </div>
+                      <button>50% OFF</button>
+                      <div class="line line2"> <i class="fas fa-circle"></i> </div>
+                    </div>
+                  </div>
+            
+            
+                  <div class="owl-carousel owl-theme">
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l1.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Honda CBR1000RR-R Fireblade</h3>
+                        <p>(Produck,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l2.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Yamaha YZF-R1M</h3>
+                        <p>(Produck , Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l3.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>MV Agusta F4 RR</h3>
+                        <p>(Produck,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <img src="image/l4.png" alt="">
+                        <div class="flex1">
+                          <label>50%</label>
+                          <i class="fas fa-heart"></i>
+                        </div>
+                      </div>
+            
+                      <div class="detalis">
+                        <h3>Aprilia RSV4 RF</h3>
+                        <p>(Produck,Disc)</p>
+                        <h2>$699 <span>$799</span> </h2>
+                        <button>Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            
+            
+                </div>
+              </section>
+            
+            
+              <script>
+                $('.owl-carousel').owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  dots: false,
+                  navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 2
+                    },
+                    1000: {
+                      items: 3
+                    }
+                  }
+                })
+              </script>
+             
+            
+      </body>
+      </html>

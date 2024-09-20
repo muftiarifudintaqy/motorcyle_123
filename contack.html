@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DINSUKCOK.CONTACK</title>
+    <link href="icon/dinsucok.png" rel="icon">
+    <link rel="stylesheet" href="asset/apala/about.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="gambar/Component 1 (1).png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contack.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop >
+          <source src="gambar/WhatsApp Video 2024-09-08 at 11.04.39_f7ff9f13.mp4" type="video/mp4" />
+        </video>
+        <section class="banner">
+            <h2>WELCOME TO MY CONTACK</h2>
+        </section>
+      </header>
+
+	<!-- service -->
+	<section class="service">
+		<div class="container">
+			<h3>CONTACT INFO</h3>
+			<div class="box">
+				<div class="col-4">
+					<h4>Address</h4>
+					<p>Jl.Soekarno Hatta, Tangerang, Kosambi, Banten 11150</p>
+				</div>
+				<div class="col-4">
+					<h4>Email</h4>
+					<p>muftiarifudintaqy0@gmail.com</p>
+				</div>
+				<div class="col-4">
+					<h4>Telp.</h4>
+					<p>(+62) 85711065619</p>
+				</div>
+				<div class="col-4">
+					<h4>Hp</h4>
+					<p>085711065619</p>
+				</div>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1726556538522!5m2!1sid!2sid!6m8!1m7!1smu8NhYsn64Lxze5s8hw5eA!2m2!1d-6.077127718585309!2d106.6651440032343!3f187.5264187705589!4f-17.70800433130259!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>By &copy; 2024 MuftiArifudinTaqy. All Rights Reserved.</small>
+		</div>
+	</footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+<script>var tombolMenu = $(".tombol-menu");
+  var menu = $("nav .menu ul");
+  
+  function klikMenu() {
+      tombolMenu.click(function () {
+          menu.toggle();
+      });
+      menu.click(function () {
+          menu.toggle();
+      });
+  }
+  
+  $(document).ready(function () {
+      var width = $(window).width();
+      if (width < 990) {
+          klikMenu();
+      }
+  })
+  
+  //check lebar
+  $(window).resize(function () {
+      var width = $(window).width();
+      if (width > 989) {
+          menu.css("display", "block");
+          //display:block
+      } else {
+          menu.css("display", "none");
+      }
+      klikMenu();
+  });
+  </script>
+</body>
+</html>
